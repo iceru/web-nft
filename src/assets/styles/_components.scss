@@ -1,0 +1,12 @@
+.btn {
+    padding: .75rem 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    display: inline-flex;
+
+    &.btn-red {
+        background: linear-gradient(0deg, rgba(4, 8, 13, 0.4), rgba(4, 8, 13, 0.4)),
+        linear-gradient(0deg, #FF1E1E, #FF1E1E);
+    }
+} 

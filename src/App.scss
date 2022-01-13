@@ -1,0 +1,60 @@
+@use './assets/styles/navigation';
+@use './assets/styles/index';
+@use './assets/styles/components';
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&family=Raleway:wght@300;400;600;700;800&display=swap');
+
+/* BREAKPOINTS */
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 70em) {
+      @content;
+    }
+  } @else if $point == laptop {
+    @media (min-width: 64em) {
+      @content;
+    }
+  } @else if $point == tablet {
+    @media (min-width: 50em) {
+      @content;
+    }
+  } @else if $point == phablet {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  } @else if $point == mobileonly {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+}
+
+body, html {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+.container {
+  display: flex;
+  @include breakpoint(laptop) {
+    max-width: 75em;
+    margin: auto;
+  }
+}
+
+.dFlex {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+}
