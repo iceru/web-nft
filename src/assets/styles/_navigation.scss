@@ -1,10 +1,12 @@
+@import './mixin';
+
 .navbar {
     background-color: black;
 
     .container {
         justify-content: space-between;
         align-items: center;
-        padding: .25em 0;
+        padding: .5rem 1rem;
 
         .navigation {
             color: white;
@@ -13,6 +15,11 @@
                 display: flex;
                 list-style: none;
                 align-items: center;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
                 li {
                     margin: 0 1rem;
                 }
@@ -22,9 +29,81 @@
                 }
             }
 
-            @media screen and (max-width: 37.5em) {
+            @include breakpoint(mobileonly) {
                 display: none;
             }
         }
+
+        .hamburger{
+            display: none;
+
+            img {
+                filter: invert(1);
+                max-height: 35px;
+            }
+
+            @include breakpoint(mobileonly) {
+                display: block;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+
+.navigation-mobile {
+    transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    z-index: 999;
+    padding: 2rem;
+    height: 100%;
+    background-color: white;
+    transition: all .2s ease-in;
+    padding: 4rem 1rem;
+
+    .close {
+        text-align: right;
+        padding: 1rem;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 2rem 1rem;
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        li {
+            margin-bottom: 1.5rem;
+            text-align: right;
+            font-weight: 700;
+            font-size: 20px;
+        }
+    }
+
+    .btnWrapper {
+        display: flex;
+        justify-content: flex-end;
+        
+        .btn {
+            color: white
+        }
+    }
+
+    &.open {
+        transform: translateX(0);
+        transition: all .2s ease-in;
     }
 }

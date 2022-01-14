@@ -1,0 +1,58 @@
+@import './mixin';
+
+.dFlex {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .justifyCenter {
+    justify-content: center;
+  }
+  
+  .alignCenter {
+    align-items: center;
+  }
+  
+  h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+  }
+
+.container {
+  display: flex;
+  z-index: 2;
+  position: relative;
+  flex-wrap: wrap;
+  
+  @include breakpoint(laptop) {
+    max-width: 75em;
+    margin: auto;
+  }
+
+  @include breakpoint(untilTablet) {
+    padding: 1rem;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.btn {
+    padding: .75rem 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    display: inline-flex;
+    border: none;
+    cursor: pointer;
+    
+    &.btn-red {
+        background-color: #FF1E1E;
+        transition: all .2s ease-in;
+
+        &:hover, &:focus, &:active {
+          transition: all .2s ease-in;
+          background-color: #b11616;
+        }
+    }
+} 

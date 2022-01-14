@@ -1,0 +1,101 @@
+@import './mixin';
+
+.footer {
+    color: white;
+    background: #08060B;
+    margin-top: -5px;
+    position: relative;
+
+    .heroBG {
+        opacity: 0.7;
+    }
+
+    .container {
+        padding: 2rem 0;
+        justify-content: space-between;
+        .footerInfo {
+            width: 35%;
+
+            .footerLogo {
+                img {
+                    max-height: 40px;
+                }
+            }
+
+            .footerText {
+                margin: 1rem 0 1rem;
+            }
+
+            .footerPlatform {
+                img {
+                    max-height: 25px;
+                    &:first-child {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+
+        .footerConnect {
+            h5 {
+                font-size: 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .footerEmail {
+                margin: 1.25rem 0;
+
+                input {
+                    background-color: transparent;
+                    border: none;
+                    border-radius: none;
+                    border-bottom: 1px solid white;
+                    margin-right: 1rem;
+                    padding: 1rem 0 .5rem;
+                    color: white;
+                    font-weight: 300;
+                    min-width: 240px;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 16px;
+
+                    &:hover, &:active, &:focus, &:focus-visible {
+                        outline: none;
+                    }
+                }
+
+                .btn {
+                    font-weight: 700;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    padding: .6rem 1.5rem;
+                }
+            }
+            
+            .socialMedia {
+                margin-bottom: .75rem;
+                img {
+                    max-height: 30px;
+                    margin-right: .5rem;
+                }
+            }
+            .footerLink {
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+
+        @include breakpoint(mobileonly) {
+            padding: 2rem 1rem;
+            .footerInfo {
+                width: 100%;
+                margin-bottom: 2rem;
+                border-bottom: 1px solid rgba(255,255,255,0.3);
+                padding-bottom: 2rem;
+            }
+        }
+    }
+
+}
