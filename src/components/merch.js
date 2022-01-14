@@ -7,7 +7,7 @@ import Hoodie from "../assets/images/hoodie.png";
 
 const Merch = () => {
   return (
-    <div className="merch">
+    <div className="merch" id="merch">
       <div className="heroBG">
         <img src={HeroBG} alt="Hero Background"></img>
       </div>

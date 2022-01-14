@@ -9,7 +9,7 @@ import PandaCommunity from "../assets/images/Panda 10.png";
 
 const Team = () => {
   return (
-    <div className="team">
+    <div className="team" id="team">
       <div className="heroBG">
         <img src={HeroBG} alt="Hero Background"></img>
       </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Logo from "../assets/images/nav-logo.png";
 import OpenSea from "../assets/images/opensea.png";
 import Polygon from "../assets/images/polygon.png";
@@ -43,21 +43,21 @@ const Footer = () => {
           </form>
 
           <div className="dFlex socialMedia">
-            <a href="#">
+            <a href="https://twitter.com/pandaofb">
               <img src={Twitter} alt="Twitter" />
             </a>
-            <a href="#">
+            <a href="https://discord.gg/7wyJ32zzJp">
               <img src={Discord} alt="Discord" />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/pandaofborderlands/">
               <img src={Instagram} alt="Instagram" />
             </a>
-            <a href="#">
+            <div>
               <img src={OpenSeaSmall} alt="OpenSea" />
-            </a>
+            </div>
           </div>
           <div className="footerLink">
-            <a href="#">POB Terms and Condition</a>
+            <div>POB Terms and Condition</div>
           </div>
         </div>
       </div>

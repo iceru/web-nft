@@ -5,7 +5,7 @@ import Ellipse2 from '../assets/images/elipse-2-roadmap.png';
 
 const Roadmap = () => {
   return (
-    <div className="roadmap">
+    <div className="roadmap" id="roadmap">
       <div className="heroBG">
         <img src={HeroBG} alt="Hero Background"></img>
       </div>
