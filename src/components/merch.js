@@ -18,9 +18,9 @@ const Merch = () => {
         <img src={Ellipse2} alt="Elipse Background"></img>
       </div>
       <div className="container titleContainer">
-        <h2 className="title">Merch</h2>
+        <h2 className="title" data-aos="fade-right" data-aos-duration="1000">Merch</h2>
       </div>
-      <div className="container">
+      <div className="container" data-aos="fade-right" data-aos-duration="2000">
         <div className="merchItem">
           <img src={Tshirt} alt="T-Shirt"></img>
         </div>

@@ -20,10 +20,10 @@ const Team = () => {
         <img src={Ellipse2} alt="Elipse Background"></img>
       </div>
       <div className="container titleContainer">
-        <h2 className="title">Team</h2>
+        <h2 className="title" data-aos="fade-right" data-aos-duration="1000">Team</h2>
       </div>
-      <div className="container">
-        <div className="teamItem">
+      <div className="container" data-aos="fade-right" data-aos-duration="2000">
+        <div className="teamItem" >
           <img src={Panda8} alt="Okta Dwi Luki"></img>
           <div className="teamText name">
             <b>Okta Dwi Luki</b>
@@ -48,7 +48,7 @@ const Team = () => {
 
       <div className="community">
         <div className="container">
-          <div className="communityText">
+          <div className="communityText" data-aos="fade-left" data-aos-duration="2000">
             <div className="title">
               JOIN THE <br></br> COMMUNITY
             </div>
@@ -60,9 +60,9 @@ const Team = () => {
               Join Our Discord
             </a>
           </div>
-          <div className="communityImage">
+          <div className="communityImage" data-aos="fade-left" data-aos-duration="1000">
             <div>
-              <img src={PandaCommunity}></img>
+              <img src={PandaCommunity} alt="Join the Community"></img>
             </div>
           </div>
         </div>

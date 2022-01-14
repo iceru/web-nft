@@ -15,13 +15,13 @@ const Roadmap = () => {
       <div className="ellipse2">
         <img src={Ellipse2} alt="Elipse Background"></img>
       </div>
-      <div className="container">
+      <div className="container" data-aos="fade-bottom" data-aos-duration="1000">
         <h2 className="title">Roadmap</h2>
         
         <div className="mobileSwipe">
           Swipe <span><img src="https://img.icons8.com/ios-filled/50/000000/chevron-right.png" alt="Chevron Right"/></span>
         </div>
-        <div className="dFlex">
+        <div className="dFlex" data-aos="fade-bottom" data-aos-duration="2000">
           <div className="q1">
             <div className="dashLine"></div>
             <h4>Q1 2022</h4>

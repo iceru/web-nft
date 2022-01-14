@@ -143,7 +143,7 @@
 
     .title {
         
-        @include breakpoint(mobileonly) {
+        @include breakpoint(untilTablet) {
             padding-left: 1rem;
         }
     }
@@ -420,7 +420,8 @@
     }
 
     .container {
-        padding: 5rem 0;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
         display: block;
 
         .subtitle {
@@ -616,7 +617,7 @@
         position: relative;
 
         .container {
-            padding: 0;
+            padding-bottom: 2rem;
             padding-top: 2rem;
         }
 
@@ -631,6 +632,7 @@
             .subtitle {
                 font-size: 24px;
                 margin-bottom: 1rem;
+                padding-right: 2rem;
             }
 
             .btn {
@@ -639,7 +641,13 @@
                 border-radius: 40px;
                 font-size: 22px;
                 font-weight: 700;
-                padding: .75rem 1rem;
+                padding: .75rem 1.5rem;
+                transition: all .2s ease-in;
+
+                &:hover, &:focus, &:active {
+                    transition: all .2s ease-in;
+                    background-color: #141212;
+                }
             }
         }
 

@@ -39,8 +39,8 @@ const Collections = () => {
       <div className="ellipse2">
         <img src={Ellipse2} alt="Elipse Background"></img>
       </div>
-      <div className="container">
-        <h2 className="title">Panda Of Borderlands</h2>
+      <div className="container" data-aos="fade-up" data-aos-duration="1000">
+        <h2 className="title" >Panda Of Borderlands</h2>
         <h4 className="subtitle">
           In the near future, 4 panda kingdoms will fight over 1 territory Panda
           of Borderland is a unique collection of <b> 10,000 Non-Fungible Tokens </b>
@@ -48,7 +48,7 @@ const Collections = () => {
         </h4>
       </div>
 
-      <div className="imageCollections">
+      <div className="imageCollections" data-aos="fade-up" data-aos-duration="2000">
         <div className="running">
           <div className="dFlex">
             {images.map((image, i) => (

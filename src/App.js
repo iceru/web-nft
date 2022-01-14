@@ -1,5 +1,9 @@
 import './App.scss';
-import { useState } from 'react';
+import 'animate.css';
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import { useState, useEffect } from 'react';
+
 import Navigation from './components/navigation';
 import Hero from './components/hero';
 import Roadmap from './components/roadmap';
@@ -8,10 +12,15 @@ import Merch from './components/merch';
 import Team from './components/team';
 import Footer from './components/footer';
 import NavigationMobile from './components/navigationMobile';
-import 'animate.css';
 
 function App() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration : 2000
+    });
+  }, []);
 
   return (
     <div>
