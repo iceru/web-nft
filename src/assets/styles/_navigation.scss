@@ -14,7 +14,7 @@
         .navigation {
             color: white;
 
-            ul {
+            > ul {
                 display: flex;
                 list-style: none;
                 align-items: center;
@@ -25,10 +25,52 @@
                 }
                 li {
                     margin: 0 1rem;
+                    padding: .5rem 0;
+                    vertical-align: middle;
                 }
 
                 .btn {
                     padding: 4px 1rem;
+                    min-height: 0;
+                }
+            }
+
+            .socialMediaLink {
+                position: relative;
+                cursor: pointer;
+
+                .dropdown {
+                    position: absolute;
+                    display: none;
+                    background-color: white;
+                    color: black;
+                    top: 35px;
+                    left: 10px;
+
+                    ul {
+                        list-style: none;
+                        padding: 0;
+
+                        li {
+                            margin-bottom: 1rem;
+                            color: black;
+                            padding: 1rem;
+                            margin: 0;
+                            width: 120px;
+                            
+                            &:hover {
+                                background-color: rgb(211, 211, 211);
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    background-color: lighten(#000, 0.1);
+                
+                    .dropdown {
+                        display: block;
+                    }
                 }
             }
 
