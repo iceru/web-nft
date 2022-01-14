@@ -139,7 +139,7 @@
     background: #08060B;
     color: white;
     position: relative;
-    margin-top: -30px;
+    margin-top: -5px;
 
     .title {
         
@@ -155,7 +155,7 @@
     }
 
     .ellipse2 {
-        top: -2px;
+        top: 0px;
     }
 
     .container {
@@ -493,7 +493,7 @@
 .merch {
     color: white;
     background: #08060B;
-    margin-top: -5px;
+    margin-top: -2px;
     position: relative;
     .ellipse1 {
         bottom: 0;
@@ -546,6 +546,7 @@
     background: #08060B;
     margin-top: -5px;
     position: relative;
+    overflow: hidden;
 
     .ellipse1 {
         top: 0;
@@ -617,8 +618,8 @@
         position: relative;
 
         .container {
-            padding-bottom: 2rem;
             padding-top: 2rem;
+            padding-bottom: 0;
         }
 
         .communityText {
@@ -656,6 +657,7 @@
 
             img {
                 width: 100%;
+                margin-bottom: -5px;
             }
         }
 

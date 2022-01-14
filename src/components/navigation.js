@@ -3,7 +3,7 @@ import Logo from "../assets/images/nav-logo.png";
 
 const Navigation = ({ open, setOpen }) => {
   return (
-    <div className="navbar" id="top">
+    <div className="navbar">
       <div className="container">
         <div className="navbarLogo">
           <img src={Logo} alt="Panda of Borderlands"></img>

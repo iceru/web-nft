@@ -9,7 +9,7 @@ import HeroBG from "../assets/images/HeroBG.png";
 const Hero = () => {
 
   return (
-    <div className="hero">
+    <div className="hero" id="top">
       <div className="heroBG">
         <img src={HeroBG} alt="Hero Background"></img>
       </div>
