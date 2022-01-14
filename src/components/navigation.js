@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Logo from "../assets/images/nav-logo.png";
 
 const Navigation = ({ open, setOpen }) => {
