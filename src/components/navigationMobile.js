@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 
 const NavigationMobile = ({ setOpen, open }) => {
+  const [drop, setDrop] = useState(false);
   return (
     <div className={`navigation-mobile ${open ? "open" : ""}`} open={open}>
       <div className="close">
@@ -23,9 +24,25 @@ const NavigationMobile = ({ setOpen, open }) => {
         <a href="#team">
           <li>Team</li>
         </a>
-        <a href="https://linktr.ee/Pandaofb">
-          <li>Social Media</li>
-        </a>
+        <div onClick={ () => setDrop(!drop)} className={`socialMediaDropdown ${drop ? "open" : ""}`}>
+          <li>Social Media <span><img src="https://img.icons8.com/ios-glyphs/30/000000/chevron-down.png" alt="chevron down"/></span></li>
+          <div className="dropdown">
+            <ul>
+              <a href="https://twitter.com/pandaofb">
+                <li>Twitter</li>
+              </a>
+              <a href="https://discord.gg/7wyJ32zzJp">
+                <li>Discord</li>
+              </a>
+              <a href="https://www.instagram.com/pandaofborderlands/">
+                <li>Instagram</li>
+              </a>
+              <div>
+                <li>OpenSea</li>
+              </div>
+            </ul>
+          </div>
+        </div>
         <a href="https://pandaofborderlands.com/mint" className="btnWrapper">
           <li className="btn btn-red">Minting</li>
         </a>
